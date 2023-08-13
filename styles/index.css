@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(75, 0, 0);
+}
+.angy {
+    opacity: 0;
+    position: fixed;
+    height: 96px;
+    width: 204px;
+    transition: 250ms ease-in-out;
+}
+.angy:hover {
+    opacity: 1;
+}
+.gif-wrapper {
+    border: 2px dotted #00f;
+    width: 210px;
+    margin: auto;
+}
+.main-container {
+    margin: auto;
+    border: 3px solid #35aa18;
+    width: fit-content;
+    padding: 10px;
+}
+.about-container {
+    margin: 0 auto;
+    color: #c217b4;
+    text-align: center;
+}
+.about-container .about {
+    color: rgb(9, 230, 230);
+    font-size: 32px;
+}
+.about-children {
+    font-size: 18px;
+}
+.info-container {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 5px 100px 5px 100px;
+}
+.info-container .socials {
+    text-align: center;
+    color: #ff0;
+    font-size: 32px;
+}
+.socials-children {
+    background-color: #35aa18;
+    padding: 5px 0px 5px 5px;
+    width: 250px;
+    color: #04d1ec;
+    font-size: 18px;
+}
+.social:hover {
+    scale: 1.08;
+    margin-left: 10px;
+}
+.meow-wrapper {
+    position: relative;
+    margin: 0px;
+    background-color: rgba(255, 0, 0, 0.05);
+    left: 40px;
+}
+.meow {
+    opacity: 0;
+    position: fixed;
+    top: 290px;
+    left: 0px;
+    transition: 1s ease-in-out;
+}
+.meow-wrapper:hover .meow {
+    opacity: 1;
+    transition: 10s ease-in;
+}
