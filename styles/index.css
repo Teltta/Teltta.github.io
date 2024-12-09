@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+#Video {
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.main {
+    background: linear-gradient(180deg, #161616 0%, #b4b4b4 100%);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    backdrop-filter: blur(3px);
+    padding: 100px;
+    border-radius: 25px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    filter: drop-shadow(0 0 10px #000);
+    font-family: "Bebas Neue";
+    font-size: 62px;
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.button {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #303030a2;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.button:hover {
+    background: #3d3d3da2;
+    transform: translateY(-5px) matrix3d(1,0,0.00,0,0.00,1,0.00,-.003,0,0,1,0,0,0,0,1);
+}
+
+.button > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    width: 60%;
+    height: 60%;
+}
+
+.loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    background: #444444;
+}
+
+.loader {
+    color: #1f1f1f;
+    width: 4px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+    transform: translateX(-58px) scale(1.5);
+    animation: l21 .5s infinite alternate linear;
+}
+
+@keyframes l21 {
+    50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+    100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+}
